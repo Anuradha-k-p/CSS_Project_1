@@ -1,0 +1,269 @@
+body{
+    background-color: #F7F7F7;
+}
+.heading{
+    width: auto;
+    height: 60px;
+    padding-left: 100px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0px 5px 5px gray;
+    
+}
+.flex_container{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 30px;
+    justify-content: flex-start;
+    gap: 20px;
+
+
+}
+.flex_item{
+   height: 250px;
+   width: 250px;
+   background-color: #FFFFFF; 
+
+}
+.flex_item:hover{
+    height: 300px;
+    width: 300px;
+    background-color: #FFFFFF; 
+    box-shadow: 5px 5px 5px  #424242;
+
+}
+.start{
+    color:#00A5EC ;
+    padding: 20px;
+}
+.line_1{
+    color: #C2C2C2;
+    text-decoration: line-through;
+    padding: 20px;
+}
+.line_2{
+    color: #424242;
+}
+.parent{
+    filter: blur(5px);
+    position: absolute;
+    
+    
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: #00A5EC;
+    border-radius: 50%;
+    margin-top: -60px;
+    
+}
+.plus{
+    color: #FFFFFF;
+    font-size: 50px;
+    padding: 10px;
+    padding-top: 40px;
+    
+}
+.add{
+    background-color: #F7F7F7;
+    color:black;
+    height: 50px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: -35px;
+    font-size: larger;
+}
+.task{
+    height: 50px;
+    background-color: #F7F7F7;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+.new{
+    text-decoration: none;
+
+}
+.pop_up{
+    height: 200px;
+    width: 300px;
+    background-color: #C2C2C2;
+    padding: 20px;
+    margin: auto;
+    margin-top: -500px;
+    
+    
+
+}
+.task_1{
+    height: 40px;
+    width: 100px;
+    background-color: #00A5EC;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    position: inherit;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+
+
+}
+
+.font{
+    font-size: 100px;
+    color: white;
+}
+.icon{
+    height: 100px;
+    background-color: #F7F7F7;
+    margin-left: 200px;
+}
+.arrow{
+    
+    font-size: 30px;
+    padding: 5px;
+    padding: 15px;
+    margin-top: 100px;
+
+    
+}
+.back{
+    background-color: #F7F7F7;
+    color:black;
+    height: 50px;
+    width: 300px;
+    margin-left: 90px;
+    margin-top: -35px;
+    font-size: larger;
+
+}
+.back_circle{
+    height: 50px;
+    width: 50px;
+    background-color: #00A5EC;
+    border-radius: 50%;
+    margin-top: -60px;
+    
+
+}
+
+
+.task_11{
+    margin-left: 600px;
+    margin-top: -135px;
+    margin-bottom: 50px;
+}
+.plus_1{
+    color: #FFFFFF;
+    font-size: 50px;
+    padding: 10px;
+    padding-top: 40px;
+}
+.circle_1{
+    height: 50px;
+    width: 50px;
+    background-color: #00A5EC;
+    border-radius: 50%;
+    margin-top: -60px;
+    
+
+}
+.add_1{
+    background-color: #F7F7F7;
+    color:black;
+    height: 50px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: -35px;
+    font-size: larger;
+}
+.pop_1{
+ height: 200px;
+ width: 300px;
+ background-color: #FFFFFF;
+ border-radius: 25px;
+ padding: 20px;
+ margin-left: 350px;
+ line-height: 20px;
+ box-shadow: 3px 3px 5px grey;
+}
+
+.start_1{
+
+    color:#00A5EC ;
+    padding: 20px;
+
+}
+.church{
+    text-decoration: line-through;
+    color: #424242;
+}
+.trip{
+    text-decoration: line-through;
+    color: #424242;
+}
+.blur{
+    filter: blur(5px);
+    
+}
+.ch{
+    width: 500px;
+    height: 150px;
+    border: 2px solid black;
+    position: absolute;
+    padding: 10px;
+    background-color: #424242;
+    margin-top: -250px;
+    margin-left: 400px;
+}
+
+.close{
+    margin-left: 470px;
+    margin-top: -40px;
+    color: #F7F7F7;
+}
+.pop_2{
+    font-size: 20px;
+    color: #F7F7F7;
+}
+.button{
+    background-color: #00A5EC;
+    color: #F7F7F7;
+    position: inherit;
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 120px;
+}
+.in{
+   margin-left: 100px;
+   padding: 10px;
+}
+.page_3{
+    text-decoration: none;
+    position: inherit;
+    bottom: 10px;
+    right: 10px;
+}
+.page_4{
+    text-decoration: none;
+}
+.page_2{
+    text-decoration: none;
+}
+.p2{
+    width: 500px;
+    height: 150px;
+    border: 2px solid black;
+    position: absolute;
+    padding: 10px;
+    background-color: #424242;
+    margin-top: 300px;
+    margin-left: 400px;
+}

@@ -1,269 +1,266 @@
-body{
-    background-color: #F7F7F7;
+/* page-1 */
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid; */
 }
-.heading{
-    width: auto;
-    height: 60px;
-    padding-left: 100px;
-    background-color: #FFFFFF;
-    padding: 10px;
-    box-shadow: 0px 5px 5px gray;
-    
+
+:root {
+    --black: rgba(66, 66, 66, 1);
+    --skyblue: rgba(0, 165, 236, 1);
+    --white: rgba(255, 255, 255, 1);
+    --border: rgba(237, 237, 237, 1);
+    --grey: rgba(194, 194, 194, 1);
+    --background: rgba(247, 247, 247, 1);
 }
-.flex_container{
-    width: 1000px;
-    height: 600px;
+
+body {
+    background: var(--background);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    padding: 15px 80px;
+    background: var(--white);
+    box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.366);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.list {
+    color: var(--skyblue);
+}
+
+.mainContainer {
+    padding: 25px 80px;
+    font-size: 20px;
+}
+
+.newtask {
+    text-align: right;
+    color: var(--black);
+    margin: 6px 0px;
+}
+
+.plusSign {
+    border-radius: 50%;
+    padding: 10px 16px;
+    color: var(--white);
+    background: var(--skyblue);
+}
+
+.addNewtask {
+    color: var(--black);
+    padding-left: 5px;
+}
+
+.addNewtask:hover {
+    color: var(--skyblue);
+    transition: ease 0.2s;
+    text-decoration: underline  var(--skyblue);
+}
+
+h5 {
+    color: var(--skyblue);
+    padding: 10px 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+h5 a{
+    color: var(--skyblue);
+    padding: 10px 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+.cardContainer {
+    width: 100%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 100px;
-    margin-left: 30px;
     justify-content: flex-start;
-    gap: 20px;
-
-
 }
-.flex_item{
-   height: 250px;
-   width: 250px;
-   background-color: #FFFFFF; 
 
+.cards {
+    border-radius: 5px;
+    width: 280px;
+    height: 280px;
+    background: white;
+    border: 2px solid var(--border);
+    margin: 5px;
 }
-.flex_item:hover{
-    height: 300px;
-    width: 300px;
-    background-color: #FFFFFF; 
-    box-shadow: 5px 5px 5px  #424242;
 
+.cards:hover {
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.371);
+    transition: ease 0.2s;
+    translate: 0px -10px;
 }
-.start{
-    color:#00A5EC ;
-    padding: 20px;
-}
-.line_1{
-    color: #C2C2C2;
+
+.del {
     text-decoration: line-through;
-    padding: 20px;
+    color: var(--grey);
 }
-.line_2{
-    color: #424242;
-}
-.parent{
-    filter: blur(5px);
-    position: absolute;
-    
-    
-}
-.circle{
-    height: 50px;
-    width: 50px;
-    background-color: #00A5EC;
-    border-radius: 50%;
-    margin-top: -60px;
-    
-}
-.plus{
-    color: #FFFFFF;
-    font-size: 50px;
-    padding: 10px;
-    padding-top: 40px;
-    
-}
-.add{
-    background-color: #F7F7F7;
-    color:black;
-    height: 50px;
-    width: 300px;
-    margin-left: 70px;
-    margin-top: -35px;
-    font-size: larger;
-}
-.task{
-    height: 50px;
-    background-color: #F7F7F7;
-    margin-left: 600px;
-    margin-top: 50px;
-}
-.new{
-    text-decoration: none;
 
+.checks {
+    font-size: 16px;
+    padding: 30px 0px;
+    color: var(--black);
+    padding: 25px 10px;
 }
-.pop_up{
+
+input[type=checked]{
+    color: gray; 
+}
+
+/* page-2 */
+
+.page2 {
+    width: 100vw;
+    height: 1200px;
+    position: absolute;
+    background: rgba(79, 79, 79, 0.25);
+    backdrop-filter: blur(4px);
+    top: 0%;
+    left: 0%;
+}
+
+.popup1 {
+    background: rgb(255, 255, 255);
+    width: 400px;
     height: 200px;
-    width: 300px;
-    background-color: #C2C2C2;
-    padding: 20px;
-    margin: auto;
-    margin-top: -500px;
-    
-    
-
-}
-.task_1{
-    height: 40px;
-    width: 100px;
-    background-color: #00A5EC;
-    color: #FFFFFF;
+    margin-top: 15%;
     text-align: center;
-    padding: 5px;
-    position: inherit;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-
-
+    padding: 5px 10px;
+    background-color: dimgrey;
 }
 
-.font{
-    font-size: 100px;
+.addnewtask-heading {
+    float: left;
+    color: var(--black);
+}
+
+
+
+.cross {
+    float: right;
+    font-size: 32px;
+    line-height: 50px;
+    color: var(--black);
+    padding: 0px 5px;
+    
+}
+
+
+
+
+.addnewtask-heading {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.c_input {
+    outline: none;
+    border: 1px solid var(--border);
+    background: white;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 12px 20px;
+}
+
+.addTaskbtn {
+    float: right;
+    padding: 8px 30px;
+    background: var(--skyblue);
     color: white;
-}
-.icon{
-    height: 100px;
-    background-color: #F7F7F7;
-    margin-left: 200px;
-}
-.arrow{
-    
-    font-size: 30px;
-    padding: 5px;
-    padding: 15px;
-    margin-top: 100px;
-
-    
-}
-.back{
-    background-color: #F7F7F7;
-    color:black;
-    height: 50px;
-    width: 300px;
-    margin-left: 90px;
-    margin-top: -35px;
-    font-size: larger;
-
-}
-.back_circle{
-    height: 50px;
-    width: 50px;
-    background-color: #00A5EC;
-    border-radius: 50%;
-    margin-top: -60px;
-    
-
+    border: 2px solid var(--skyblue);
+    border-radius: 5px;
+    margin: 10px 0px;
 }
 
-
-.task_11{
-    margin-left: 600px;
-    margin-top: -135px;
-    margin-bottom: 50px;
-}
-.plus_1{
-    color: #FFFFFF;
-    font-size: 50px;
-    padding: 10px;
-    padding-top: 40px;
-}
-.circle_1{
-    height: 50px;
-    width: 50px;
-    background-color: #00A5EC;
-    border-radius: 50%;
-    margin-top: -60px;
-    
-
-}
-.add_1{
-    background-color: #F7F7F7;
-    color:black;
-    height: 50px;
-    width: 300px;
-    margin-left: 70px;
-    margin-top: -35px;
-    font-size: larger;
-}
-.pop_1{
- height: 200px;
- width: 300px;
- background-color: #FFFFFF;
- border-radius: 25px;
- padding: 20px;
- margin-left: 350px;
- line-height: 20px;
- box-shadow: 3px 3px 5px grey;
+.addTaskbtn:hover {
+    background: var(--white);
+    border: 1px solid var(--skyblue);
+    color: var(--skyblue);
+    transition: ease 0.2s;
+    padding: 10px 32px;
 }
 
-.start_1{
+/* Page-3 */
 
-    color:#00A5EC ;
+.page3container{
+    width: 100%;
+    height: 100%;
     padding: 20px;
+}
 
+.page3Options{
+    width: 400px;
+    margin-bottom: 30px; 
+    padding: 20px 0px;
 }
-.church{
-    text-decoration: line-through;
-    color: #424242;
-}
-.trip{
-    text-decoration: line-through;
-    color: #424242;
-}
-.blur{
-    filter: blur(5px);
+
+.back{
+    color: var(--black);
+    font-size: 35px;
+    float: left;
+    margin-top: -3%;
+    
     
 }
-.ch{
-    width: 500px;
-    height: 150px;
-    border: 2px solid black;
-    position: absolute;
-    padding: 10px;
-    background-color: #424242;
-    margin-top: -250px;
-    margin-left: 400px;
+.b-text{
+    font-size: 18px;
+    margin-top: -10px;
+    margin-left: 20px;
+   
+
 }
 
-.close{
-    margin-left: 470px;
-    margin-top: -40px;
-    color: #F7F7F7;
-}
-.pop_2{
+.page3-h5{
+    text-align: center;
     font-size: 20px;
-    color: #F7F7F7;
 }
-.button{
-    background-color: #00A5EC;
-    color: #F7F7F7;
-    position: inherit;
-    right: 10px;
-    bottom: 10px;
-    height: 30px;
-    width: 120px;
+
+.page3-cards{
+    width: 400px;   
+    height: 280px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.296);
 }
-.in{
-   margin-left: 100px;
-   padding: 10px;
+
+.page3-cards:hover{
+    translate: none;
 }
-.page_3{
-    text-decoration: none;
-    position: inherit;
-    bottom: 10px;
-    right: 10px;
-}
-.page_4{
-    text-decoration: none;
-}
-.page_2{
-    text-decoration: none;
-}
-.p2{
-    width: 500px;
-    height: 150px;
-    border: 2px solid black;
+
+/* page-4 */
+.page4 {
+    width: 100vw;
+    height: 1200px;
     position: absolute;
-    padding: 10px;
-    background-color: #424242;
-    margin-top: 300px;
-    margin-left: 400px;
+    background: rgba(79, 79, 79, 0.25);
+    backdrop-filter: blur(4px);
+    top: 0%;
+    left: 0%;
+}
+
+.popup2 {
+    width: 400px;
+    height: 200px;
+    margin-top: 15%;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: dimgrey;
+}
+.back_sign{
+    height: 50px;
+    width: 50px;
 }
